@@ -6,7 +6,11 @@ TwitConnect4 is a Twitter bot that enables users to play the classic game of Con
 
 TwitConnect4 utilizes the Twitter API and game logic to create a bot that facilitates Connect 4 gameplay on Twitter. The project consists of the following files:
 
-- `main.py`: This file contains the main logic for interacting with the Twitter API and handling user commands.This file also implements the game logic and functions for Connect 4.
+- `main.py`: This file contains the main logic for interacting with the Twitter API and handling user commands.
+- `game.py`: This file implements the game logic and functions for Connect 4.
+- `gameboard.txt`: This file stores the current state of the game board.
+- `gamenumber.txt`: This file keeps track of the number of games played.
+- `newboard.txt`: This file contains the representation of a new game board.
 
 ## How to Play
 
@@ -29,7 +33,7 @@ To set up and use TwitConnect4, follow these steps:
 1. Clone the project repository:
 
    ```bash
-   git clone https://github.com/your-username/TwitConnect4.git
+   git clone https://github.com/nguyenttleo/TwitConnect4.git
    ```
 
 2. Install the required dependencies:
@@ -38,7 +42,7 @@ To set up and use TwitConnect4, follow these steps:
    pip install -r requirements.txt
    ```
 
-   Ensure you have the necessary libraries installed, including `tweepy` for interacting with the Twitter API.
+   Ensure you have the necessary libraries installed, including `tweepy` and `itertools` for interacting with the Twitter API and game logic, respectively.
 
 3. Obtain Twitter API credentials:
 
@@ -63,6 +67,7 @@ To set up and use TwitConnect4, follow these steps:
 The following dependencies are required for the TwitConnect4 project:
 
 - tweepy
+- itertools
 
 You can install the required dependencies by running:
 
@@ -74,4 +79,4 @@ Ensure that you have the necessary dependencies installed before running the pro
 
 Now, challenge your friends and engage in thrilling Connect 4 battles right on Twitter with TwitConnect4!
 
-Let the disc-dropping and tweet-replying begin! :game_die:
+Let the disc-dropping and tweet-replying begin!
